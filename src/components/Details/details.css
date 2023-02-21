@@ -1,0 +1,175 @@
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #6d4989, transparent);
+}
+
+.actions {
+  right: 6%;
+  position: absolute;
+  top: 20.6%;
+  display: flex;
+  flex-direction: row;
+  width: 10vw;
+  justify-content: space-around;
+}
+.actions > button {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 0 0;
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+.detail-top {
+  width: 90vw;
+  height: 20vh;
+  background-image: url("../../../public/bg_top.jpg");
+  background-size: cover;
+}
+
+.detail-left {
+  width: 35vw;
+  top: 20%;
+  height: 80vh;
+  position: absolute;
+  background-image: url("../../../public/bg_main.jpg");
+  background-size: cover;
+}
+
+.contact-outer {
+  width: 320px;
+  height: 320px;
+  position: fixed;
+  background: white;
+  top: 28vh;
+  right: 44vw;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 1px 14px #ffffff3b;
+}
+
+.contact-img {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../../public/contact.png");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 14px #5976c747;
+}
+
+.contact-img > label {
+  width: 300px;
+  display: block;
+  height: 300px;
+}
+
+.detail-right {
+  position: absolute;
+  bottom: 20%;
+  right: 15%;
+  display: flex;
+  flex-direction: column;
+
+  --g: 8px; /* the gap */
+  --b: 2px; /* border thickness*/
+  --c: #f4f5f3; /* the color */
+
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg, var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg, var(--_c)) repeat-y;
+  background: var(--_g1) var(--_p, 25%) 0, var(--_g2) 0 var(--_p, 125%),
+    var(--_g1) var(--_p, 125%) 100%, var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b), var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(50%);
+  transition: 0.3s;
+}
+
+.detail-right:hover {
+  --_p: 75%;
+  filter: grayscale(0%);
+}
+
+.detail-right > div > p {
+  font-size: medium;
+  font-style: italic;
+  color: #f1ebeb;
+  display: inline;
+}
+.detail-right > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.detail-right > div > span {
+  font-size: 30px;
+  font-style: normal;
+}
+.detail-right > div:last-child > span {
+  color: aquamarine;
+}
+.detail-bottom {
+  width: 400px;
+  height: 46px;
+  position: absolute;
+  top: 35%;
+  font-size: 25px;
+  right: 21%;
+  color: #f1ebeb;
+}
+.detail-bottom > p {
+  font-weight: 600;
+  font-style: italic;
+  font-size: larger;
+  margin: 0;
+}
+
+#getFile {
+  display: none;
+}
+
+input {
+  margin: 10px;
+  height: 35px;
+  border: 1px solid #0d0606;
+  box-shadow: 0px 0px 0px 4px #f2eeee7a;
+  border-radius: 14px;
+  font-size: 30px;
+  padding: 0 10px 0 10px;
+}
+
+.edit-btn {
+  background-image: url("../../../public/edit.png");
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+}
+.cancel-btn {
+  background: url("../../../public/cancel.png");
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+}
+.delete-btn {
+  background: url("../../../public/delete.png");
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+}
+.save-btn {
+  background: url("../../../public/save.png");
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+}

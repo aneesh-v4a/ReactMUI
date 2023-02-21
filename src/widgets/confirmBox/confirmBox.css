@@ -1,0 +1,56 @@
+.confirm-bg{
+    width: 100%;
+    height: 100%;
+    background-color: #00000085;
+    position: absolute;
+    right: 0;
+}
+.confirm-container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 82px;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    background: white;
+    box-shadow: 1px 2px 2px 9px #48474770;
+    border-radius: 10px;
+}
+.confirm-bar{
+    width: 400px;
+    height: 25px;
+    background-color: #929292d0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1.2px solid #665a5a;
+}
+.confirm-message{
+    position: relative;
+    font-size: medium;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+}
+.confirm-message > p{
+    margin: 0;
+}
+.confirm-actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 6px;
+    margin: 5px;
+}
+.confirm-actions > button{
+    border: none;
+    background: white;
+    margin-right: 5px;
+    height: 20px;
+}
+.confirm-actions > button:nth-child(1){
+    border: none;
+    border-right: 1.2px solid #c2c2c7;
+}
+.confirm-actions > button:hover{
+    font-weight: 600;
+}

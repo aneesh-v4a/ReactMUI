@@ -1,0 +1,37 @@
+.sub-item{
+    color: blue;
+    cursor: pointer;
+}
+.sub-item::before{
+    content: '\261B   ';
+}
+.sub-item:hover{
+    color: white;
+    background-color: rgb(53, 56, 49);
+}
+.main-label-closed{
+    color: red;
+    cursor: pointer;
+    font-size: large;
+    margin: 10px 0 10px 0;
+}
+.main-label-closed:hover{
+    color: white;
+    background-color: rgb(53, 56, 49);
+}
+.main-label-closed::after{
+    content: ' \21E3';
+}
+.main-label-expanded{
+    color: red;
+    cursor: pointer;
+    font-size: large;
+    background-color: rgb(53, 56, 49);
+    margin: 10px 0 10px 0;
+}
+.main-label-expanded::after{
+    content: ' \21E1';
+}
+.main-item{
+    border-bottom: 1.2px solid rgb(95, 92, 92);
+}

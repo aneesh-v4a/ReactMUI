@@ -1,0 +1,70 @@
+.card-sm {
+  width: 10vw;
+  background-color: white;
+  border-radius: 5px;
+  height: 35vh;
+  cursor: url('../../../public/ch.png'), pointer;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 5px;
+  padding: 2px;
+}
+.card-md {
+  width: 15vw;
+  background-color: white;
+  border-radius: 5px;
+  height: 52.5vh;
+  cursor: url('../../../public/ch.png'), pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 5px;
+}
+.card-lg {
+  width: 20vw;
+  background-color: white;
+  border-radius: 5px;
+  height: 70vh;
+  cursor: url('../../../public/ch.png'), pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 5px;
+}
+.card-sm:hover {
+  box-shadow: 4px 4px 2px 1px rgb(31, 32, 29);
+}
+.card-md:hover {
+  box-shadow: 4px 4px 2px 1px rgb(31, 32, 29);
+}
+.card-lg:hover {
+  box-shadow: 4px 4px 2px 1px rgb(31, 32, 29);
+}
+.img-hold {
+  background-image: url("../../../public/person.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: calc(100% - 10px);
+  height: calc(58% - 10px);
+  padding: 5px;
+  background-position: center;
+}
+.card-sm > h6,
+h4 {
+  margin: 0;
+  word-wrap: break-word;
+}
+.card-md > h6,
+h4 {
+  margin: 0;
+  word-wrap: break-word;
+}
+.card-lg > h6,
+h4 {
+  margin: 0;
+  word-wrap: break-word;
+}

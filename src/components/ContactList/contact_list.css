@@ -1,0 +1,19 @@
+.list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  height: calc(100vh - 10px);
+  width: 90vw;
+  padding: 5px;
+  gap: 5px;
+  justify-content: flex-start;
+}
+
+.error {
+  margin: 0;
+  font-size: 100px;
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}

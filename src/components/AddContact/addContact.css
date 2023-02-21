@@ -1,0 +1,98 @@
+.add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title > p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 7%;
+  left: 15%;
+}
+
+.contact-outer {
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  background: white;
+  top: 26vh;
+  right: 55vw;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 1px 14px #ffffff3b;
+}
+
+.contact-img {
+  width: 300px;
+  height: 300px;
+  background-image: url("../../../public/contact.png");
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 14px #5976c747;
+}
+
+.contact-img > label {
+  width: 300px;
+  display: block;
+  height: 300px;
+  cursor: url("../../../public/ul.png"), default;
+}
+
+#getFile {
+  display: none;
+}
+.form-container {
+  width: 25vw;
+  height: 46vh;
+  position: absolute;
+  right: 16%;
+  top: 25%;
+  padding: 20px;
+  border: 5px solid wheat;
+  border-radius: 18px;
+  box-shadow: 0 1px 0 15px #00000036;
+}
+
+.form-container > form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.add-form > input {
+  margin: 10px;
+  height: 35px;
+  border: 1px solid #0d0606;
+  box-shadow: 0px 0px 0px 4px #f2eeee7a;
+  border-radius: 14px;
+  font-size: 30px;
+  padding: 0 10px 0 10px;
+}
+.add-form > label {
+  letter-spacing: 10px;
+  padding: 0 60% 0 0;
+  color: wheat;
+  cursor: url("../../../public/cur.png"), default;
+}
+.add-form > button {
+  width: 10vw;
+  margin: 5px 0 0 32%;
+  height: 35px;
+  color: white;
+  background-color: #3fc486;
+  border: 1px solid #16171745;
+  box-shadow: 2px 3px 1px 2px #16171745;
+  /* cursor: pointer; */
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}

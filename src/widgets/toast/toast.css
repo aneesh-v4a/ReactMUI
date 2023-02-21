@@ -1,0 +1,52 @@
+.toast-container{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    background-color: #1c1313de;
+    border-radius: 2px;
+    right: 10px;
+    top: 0;
+}
+.toast-msg{
+    position: relative;
+    font-size: medium;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+}
+.toast-msg > p{
+    margin: 0;
+    color: white;
+    font-size: 12px;
+}
+
+.success {
+    border: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, 
+    rgb(0, 255, 76), 
+    rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.danger {
+    border: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, 
+    rgb(255, 8, 0), 
+    rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.warn {
+    border: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, 
+    rgb(255, 145, 0), 
+    rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.info {
+    border: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, 
+    rgb(0, 89, 255), 
+    rgba(0, 0, 0, 0)) 1 100%;
+}
