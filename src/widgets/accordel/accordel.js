@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { ExpandMore } from '@mui/icons-material';
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import './accordel.css';
 
@@ -8,17 +9,7 @@ export default function Accordel(props){
         navigate(path);
       }
 
-    const [isClicked, setIsClicked] = useState(true);
-
     const navigate = useNavigate();
-    
-    const handleTitleAction = (e, callback) => {
-        e.preventDefault();
-        setIsClicked(!isClicked);
-        if (callback) {
-            callback();
-        }
-    }
 
     const handleSubAction = (e, menu) => {
         e.preventDefault();
@@ -28,13 +19,22 @@ export default function Accordel(props){
     const subItems = []
     for (const [i, item] of props.sub.entries()) {
         subItems.push(
-            <div key={i} className="sub-item" onClick={(e) => handleSubAction(e, item)}>{item.title}</div>
+            <Typography key={i} onClick={(e) => handleSubAction(e, item)}>
+            {item.title}
+            </Typography>
         )
     }
-    const item = <div className="main-item">
-        <h6 className={!isClicked? 'main-label-closed' : 'main-label-expanded'} onClick={(e) => handleTitleAction(e, props.mainCallback)}>{props.title}</h6>
-        { isClicked ? subItems:null }
-    </div>
+
+    const item = 
+        <Accordion>
+            <AccordionSummary expandIcon={<ExpandMore/>}>
+                <Typography>{props.title}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+            { subItems }
+            </AccordionDetails>
+        </Accordion>
+        
 
     return item
 }

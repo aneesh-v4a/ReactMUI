@@ -1,4 +1,4 @@
-import Accordel from "../widgets/accordel/accordel";
+import Accordel from "../../widgets/accordel/accordel";
 
 export default function NavBar(props){
     const navList = [];
